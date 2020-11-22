@@ -1,0 +1,35 @@
+<section class="featured-slider-section">
+  <div class="f-s-section-header text-center">
+    <h3 class="font-weight-bolder">Featured Stories</h3>
+    <p class="f-s-section-summary">
+      At iam decimum annum in spelunca iacet. Cur tantas regiones<br> barbarorum pedibus obiit, tot maria transmisit.
+    </p>
+  </div>
+  <div class="feature-slider-area">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template *ngFor="let slide of slides" carouselSlide>
+        <div class="f-slider-item font-weight-bolder" style="background-image: url('{{slide.ImageUrl}}');">
+          <a (click)="open(content, slide)" class="f-slider-play-btn">
+            <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 0.5V24L16.5 12L0.5 0.5Z" fill="white" />
+            </svg>
+          </a>
+          <div class="f-slider-item-title">
+            {{slide.Title}}
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<ng-template #content let-modal>
+  <button type="button" class="m-v-close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-body m-video-modal-body">
+    <video class="m-hero-video" controls>
+      <source src="{{selectedSlide.VideoUrl}}" type="video/mp4">
+    </video>
+  </div>
+</ng-template>

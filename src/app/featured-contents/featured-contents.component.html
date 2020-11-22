@@ -1,0 +1,18 @@
+<div class="container">
+  <section class="featured-contents">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12 col-xs-12">
+        <h2 class="feaure-content-s-title font-weight-bolder">Quae quo sunt excelsiores Dant clariora</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 col-xs-12" *ngFor="let card of cards">
+        <div class="feature-content-card" style="background-image: url('{{card.ImageUrl}}');">
+          <div class="feature-content-body">
+            {{card.Title}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

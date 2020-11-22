@@ -1,0 +1,65 @@
+.inspiration-section
+  padding: 4rem 0
+  .insp-section-summary
+    color: #889399
+    margin-bottom: 3rem
+
+.insp-card
+  display: flex
+  height: 375px
+  width: 100%
+  color: #fff
+  flex-direction: column
+  border-radius: 6px
+  padding: 2rem
+  justify-content: flex-end
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+  z-index: 0
+  overflow: hidden
+  margin-bottom: 30px
+  .overlay
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 0
+    height: 100%
+    background-color: #83BCC5
+    opacity: 0
+    z-index: -1
+    transition: all 0.15s ease-in
+  &:hover
+    .overlay
+      opacity: 0.6
+      width: 100%
+    .insp-card-face-pile:not(:first-of-type)
+      margin-left: 3px
+    .insp-card-play-btn
+      transform: rotate(360deg)
+
+  .insp-card-type
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 10px
+
+  .insp-card-title
+    font-Weight: 600
+    font-size: 24px
+    margin-bottom: 0.75rem
+
+  .insp-card-face-pile
+    height: 35px
+    width: 35px
+    transition: margin 0.15s ease-in
+    &:not(:first-of-type)
+      margin-left: -10px
+
+  .insp-card-play-btn
+    position: absolute
+    top: 2rem
+    left: 2rem
+    transition: transform 0.75s ease-in

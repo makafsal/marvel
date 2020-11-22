@@ -1,0 +1,93 @@
+.carousel-img-surface
+  position: relative
+  z-index: 0
+  width: 100%
+  height: 100vh
+  background-position: center
+  background-size: cover
+  background-attachment: fixed
+  display: flex
+  align-items: center
+  color: #fff
+
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background: #284C65
+    opacity: 0.6
+    left: 0px
+    top: 0px
+    display: block
+    z-index: -1
+
+.m-carousel-summary
+  margin-top: 4rem !important
+  margin-bottom: 1.75rem !important
+
+.m-carousel-title
+  font-size: 4.5rem
+
+.m-hero-bottom-bar
+  position: absolute
+  bottom: 0
+  width: 100%
+
+.search-bar-col
+  padding-right: 0px !important
+
+.m-slider-controls-area
+  background: #83BCC5
+  position: absolute
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: #fff
+
+.m-slider-video-holder
+  position: absolute
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  width: 100%
+  left: 0
+  bottom: 77px
+  height: 310px
+  border-top-left-radius: 5px
+  border-top-right-radius: 5px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.m-v-close
+  position: absolute
+  right: -23px
+  top: -12px
+  background-color: transparent
+  border: none
+  color: #fff
+  font-size: 25px
+  padding: 0
+  &:focus
+    outline: none!important
+
+.m-hero-video
+  max-width: 100%
+  &:focus
+    outline: none !important
+
+.m-video-modal-body
+  padding: 0!important
+
+@media only screen and (max-width: 1024px)
+  .m-slider-video-holder
+    display: none
+
+@media only screen and (max-width: 768px)
+  .m-carousel-title
+    font-size: 2.5rem

@@ -1,0 +1,69 @@
+.featured-stories
+  position: relative
+  background-image: url('../../assets/images/5.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  background-attachment: fixed
+  height: 100vh
+  &::before
+    content: ''
+    display: block
+    height: 100%
+    width: 100%
+    position: absolute
+    background: linear-gradient(219.38deg, rgba(24, 45, 57, 0) 16.1%, #182D39 94.12%)
+    opacity: 0.6
+
+.featured-story-entries
+  width: 100%
+  height: 100%
+  padding: 4rem 10rem 4rem 4rem
+  position: absolute
+  top: 0
+  right: 0
+  color: #ffffff
+  background: rgb(17 39 51 / 90%)
+
+.feature-stories-left
+  height: 100vh
+  display: flex
+  color: #ffffff
+  padding: 5rem 0
+  flex-direction: column
+  justify-content: flex-end
+
+.f-story-entries-area
+  padding: 3rem 4rem 1rem 0rem
+  .f-story-entry
+    display: flex
+    flex-direction: row
+    align-items: center
+    border-bottom: 1px solid #455158
+    .story-face
+      height: 37px
+      width: 37px
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+    .story-content
+      width: calc(100% - 37px)
+      padding: 10px 15px
+      margin: 10px 0
+      .story-title
+        font-size: 14px
+      .story-date
+        font-size: 12px
+        color: #90999F
+
+@media only screen and (max-width: 768px)
+  .featured-stories
+    height: auto
+
+  .featured-story-entries
+    position: relative
+    padding: 5rem
+    margin-bottom: 4rem
+
+  .f-story-entries-area
+    padding: 3rem 0

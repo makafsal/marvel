@@ -1,0 +1,35 @@
+<div class="m-navbar-toggler-menu collapse" [class.collapse]="navbarCollapsed" id="marvelToggleNavbar">
+  <div class="m-navbar-close-btn" (click)="toggleNavbarCollapse()">
+    <svg width="15" height="15" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M10.9997 13.6515L2.95048 21.7007L0.298828 19.0491L8.348 10.9999L0.298828 2.95072L2.95048 0.299072L10.9997 8.34825L19.0488 0.299072L21.7005 2.95072L13.6513 10.9999L21.7005 19.0491L19.0488 21.7007L10.9997 13.6515Z"
+        fill="white" />
+    </svg>
+  </div>
+  <ul class="navbar-nav m-navbar-menu">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+  </ul>
+</div>
+<div class="marvel-header">
+  <div class="container">
+    <div class="row m-nav-row">
+      <div class="col">
+        <div class="marvel-logo">MARVEL</div>
+      </div>
+      <div class="col">
+        <nav class="m-navbar navbar navbar-expand-xs">
+          <div class="m-nav-toggler" (click)="toggleNavbarCollapse()" data-toggle="collapse"
+            data-target="#marvelToggleNavbar" aria-controls="marvelToggleNavbar" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="m-navbar-toggler-icon"></span>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

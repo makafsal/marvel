@@ -1,0 +1,80 @@
+.featured-slider-section
+  padding: 4rem 0
+  .f-s-section-header
+    text-align: center
+    .f-s-section-summary
+      color: #889399
+
+.feature-slider-area
+  margin-top: 4rem
+
+.f-slider-item
+  width: 100%
+  height: 300px
+  border-radius: 6px
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  color: #fff
+  display: flex
+  align-items: flex-end
+  padding: 2rem
+  overflow: hidden
+  position: relative
+  z-index: 0
+  &::after
+    content: ''
+    display: block
+    background: linear-gradient(180deg, rgba(26, 47, 58, 0) 43.75%, rgba(26, 47, 58, 0.79) 100%)
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+  &:hover
+    .f-slider-play-btn,
+    .f-slider-item-title
+      opacity: 1
+
+.f-slider-play-btn
+  background-color: #EF7061
+  border-radius: 50%
+  display: flex
+  padding: 14px
+  position: absolute
+  z-index: 1
+  width: 52px
+  align-items: center
+  justify-content: center
+  top: 15px
+  left: 15px
+  transition: all 0.15s ease-in
+  cursor: pointer
+  opacity: 0
+  &:hover
+    box-shadow: -1px 3px 5px rgb(0 0 0 / 25%)
+
+.f-slider-item-title
+  transition: all 0.15s ease-in
+  opacity: 0
+
+.m-v-close
+  position: absolute
+  right: -23px
+  top: -12px
+  background-color: transparent
+  border: none
+  color: #fff
+  font-size: 25px
+  padding: 0
+  &:focus
+    outline: none!important
+
+.m-hero-video
+  max-width: 100%
+  &:focus
+    outline: none !important
+
+.m-video-modal-body
+  padding: 0!important

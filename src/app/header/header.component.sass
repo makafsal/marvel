@@ -1,0 +1,76 @@
+.m-navbar-toggler-menu
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 18
+  background: #112733
+  height: 100%
+  width: 25%
+  color: #ffffff
+  padding: 2.5em
+  overflow: auto
+  .m-navbar-close-btn
+    cursor: pointer
+    position: absolute
+    left: 15px
+    top: 10px
+  a
+    color: #ffffff
+
+  .m-navbar-menu
+    display: flex
+    justify-content: center
+    align-items: center
+
+.marvel-header
+  position: absolute
+  z-index: 2
+  width: 100%
+  margin-top: 35px
+
+  .m-nav-row
+    align-items: center
+
+  .m-navbar
+    justify-content: flex-end
+
+  .marvel-logo
+    color: #ffffff
+    font-family: Poppins
+    font-size: 16px
+    font-style: normal
+    font-weight: 700
+    line-height: 19px
+    letter-spacing: 6px
+
+.m-nav-toggler
+  height: 0px
+  cursor: pointer
+  .m-navbar-toggler-icon
+    display: inline-block
+    background: #ffffff
+    height: 2px
+    width: 32px
+    position: absolute
+    top: 3px
+    margin-left: -17px
+    &::before
+      content: ''
+      display: inline-block
+      width: 32px
+      height: 2px
+      background: #ffffff
+      top: 8px
+      right: 0
+      position: absolute
+
+    &::after
+      content: ''
+      display: block
+      width: 100%
+      height: 12px
+      background-color: #f000
+
+@media only screen and (max-width: 768px)
+  .m-navbar-toggler-menu
+    width: 100%

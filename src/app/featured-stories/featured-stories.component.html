@@ -1,0 +1,34 @@
+<section class="featured-stories">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="feature-stories-left">
+          <div>
+            <h3 class="font-weight-bolder">Lorem Ipsum Dolor Sit Amet</h3>
+          </div>
+          <div>
+            <p>
+              At iam decimum annum in spelunca iacet. Cur tantas regiones barbarorum pedibus obiit, tot maria
+              transmisit.
+            </p>
+            <a class="btn m-primary-btn" href="#">CONTACT</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 featured-story-entries">
+        <div>
+          <h3 class="font-weight-bolder">Featured Stories</h3>
+        </div>
+        <div class="f-story-entries-area">
+          <div class="f-story-entry" *ngFor="let story of stories">
+            <div class="story-face" style="background-image: url('{{story.ProfilePicture}}');"></div>
+            <div class="story-content">
+              <div class="story-title">{{story.Title}}</div>
+              <div class="story-date">{{story.Created}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
